@@ -1,6 +1,8 @@
 # Coin Master Village Cost Calculator - Chrome Extension
 
 A Chrome extension that helps Coin Master players calculate the exact cost to upgrade their villages.
+[![Website](https://img.shields.io/badge/Website-coinmaster--freespins.net-blue?logo=google-chrome)](https://coinmaster-freespins.net/)
+
 
 ## Features
 
