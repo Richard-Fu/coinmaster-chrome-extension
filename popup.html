@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Master Village Calculator</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>Village Cost Calculator</h1>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <label for="currentLevel">Current Village Level:</label>
+            <select id="currentLevel" class="level-select">
+                <option value="">Select Level</option>
+            </select>
+        </div>
+
+        <div class="input-section">
+            <label for="targetLevel">Target Village Level:</label>
+            <select id="targetLevel" class="level-select">
+                <option value="">Select Level</option>
+            </select>
+        </div>
+
+        <button id="calculateBtn" class="calculate-btn" disabled>
+            Calculate Cost
+        </button>
+
+        <div id="resultsSection" class="results-section hidden">
+            <div class="result-card">
+                <h3>Upgrade Cost</h3>
+                <div class="cost-display">
+                    <span class="cost-amount" id="upgradeCost">0</span>
+                    <span class="cost-label">Coins Needed</span>
+                </div>
+            </div>
+
+            <div class="upgrade-info">
+                <div class="info-row">
+                    <span class="info-label">Levels to upgrade:</span>
+                    <span class="info-value" id="levelDifference">0</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Next level cost:</span>
+                    <span class="info-value" id="nextLevelCost">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <button class="quick-btn" data-levels="1">+1 Level</button>
+            <button class="quick-btn" data-levels="5">+5 Levels</button>
+            <button class="quick-btn" data-levels="10">+10 Levels</button>
+            <button class="quick-btn" data-levels="25">+25 Levels</button>
+        </div>
+
+        <div class="footer">
+            <p>Data from <a href="https://coinmaster-freespins.net" target="_blank">coinmaster-freespins.net</a></p>
+        </div>
+    </div>
+
+    <script src="village-costs.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
